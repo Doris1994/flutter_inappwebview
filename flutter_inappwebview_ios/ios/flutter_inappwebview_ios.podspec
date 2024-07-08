@@ -20,6 +20,7 @@ A new Flutter plugin.
 
   # Flutter.framework does not contain a i386 slice. Only x86_64 simulators are supported.
   s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES', 'VALID_ARCHS[sdk=iphonesimulator*]' => 'x86_64' }
+  s.resource_bundles = {'flutter_inappwebview_ios_privacy' => ['Resources/PrivacyInfo.xcprivacy']}
 
   s.libraries = 'swiftCoreGraphics'
 
@@ -29,8 +30,8 @@ A new Flutter plugin.
 
   s.swift_version = '5.0'
 
-  s.platforms = { :ios => '11.0' }
-  s.dependency 'OrderedSet', '~>5.0'
+  s.platforms = { :ios => '12.0' }
+  s.dependency 'OrderedSet', '~>6.0.3'
 
   s.default_subspec = 'Core'
 
